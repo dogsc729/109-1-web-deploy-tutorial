@@ -2,7 +2,6 @@
   "name": "my-sudoku",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dogsc729.github.io/109-1-web-deploy-tutorial/",
   "dependencies": {
     "-": "^0.0.1",
     "@material-ui/core": "^4.11.0",
@@ -12,6 +11,7 @@
     "fireworks": "^2.2.6",
     "fs": "^0.0.1-security",
     "list-files": "^1.1.4",
+    "nodemon": "^2.0.7",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-loading": "^2.0.3",
@@ -20,10 +20,10 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "predeploy": "yarn build",
-    "deploy" : "gh-pages –d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
